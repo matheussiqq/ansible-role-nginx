@@ -1,0 +1,19 @@
+---
+# tasks file for common
+- name: update SO
+  apt:
+    name: "*"
+    update_cache: yes
+
+- name: instalar pacotes no ubuntu
+  apt:
+    name:
+      - telnet
+      - htop
+      - wget
+      - neofetch
+
+- name: criar usuario para as vm's
+  user:
+    name: "matheus"
+
